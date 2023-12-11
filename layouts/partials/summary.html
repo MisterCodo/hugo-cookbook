@@ -1,7 +1,7 @@
 <div class="card" style="border-radius: 1%;">
     <div class="card-image">
         <figure class="image is-4by3">
-        <img style="border-radius: 3%;" src="{{ $.Params.Recipe_image | absURL }}" alt="Placeholder image">
+        <img style="border-radius: 3%;" src="{{ printf "%s%s" .Site.BaseURL .Params.Recipe_image }}" alt="Placeholder image">
         </figure>
     </div>
     <div class="card-content">
