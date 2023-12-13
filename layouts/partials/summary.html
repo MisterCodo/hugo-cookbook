@@ -12,9 +12,9 @@
         <div class="content">
             <p class="is-small">{{ $.Params.Tagline }}</p>
             <br>
-                <i class="fas fa-tags pr-2"></i>
                 {{ range $index, $element := $.Params.Tags }}
-               <a href="/tags/{{ $element }}">{{$element}}</a>
+                <i class="fas fa-tags"></i>
+                {{$element}}
                 {{ end }}
             <br>
         </div>

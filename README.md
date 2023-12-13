@@ -1,6 +1,6 @@
 # Cookbook Theme
 
-[Demo Site](https://wonderful-raman-ea1990.netlify.app)
+Forked theme. Removed most feature for a simplified look.
 
 ## About
 
@@ -8,21 +8,12 @@ Cookbook is a theme for hugo that stores all of your recipes and displays them i
 
 Developed with Bulma CSS and UmbrellaJS (as well as fuse.js for search).
 
-![Cookbook Homepage](images/screenshot.png)
-
 ## Features
 
-- [x] Search all your recipes.
 - [x] Display cooking/cooling time, calories, servings, and prep time.
-- [x] Tag your recipes, browse by tags.
+- [x] Tag your recipes.
 - [x] Break your ingredients into subheadings.
 - [x] Print view.
-
-## Planned
-
-- [x] 404 page.
-- [ ] More customizable print options, smaller font size for printing.
-- [ ] Any other layout tweaks/feature requests.
 
 ## Install
 
@@ -34,11 +25,7 @@ You can install using hugo's recommended theme install method while in your hugo
 
 `git init`
 
-`git submodule add https://github.com/deranjer/hugo-cookbook.git themes/cookbook`
-
-OR
-
-You can download the latest release, or the the current master as a zip, then extract the zip file into the themes directory.
+`git submodule add https://github.com/MisterCodo/hugo-cookbook.git themes/cookbook`
 
 ## Copy Site Config
 
@@ -57,11 +44,3 @@ This will ensure that any new content you create will be of type `recipe`.
 Simply run `hugo new recipe_name.md` to create your new recipe in the `content` folder.  Modify the markdown file as required for your new recipe.
 
 `hugo serve` to view the site.
-
-## Recipe Views of the Site
-
-![Ramen Recipe](images/tn.png)
-
-## Directions View
-
-![Direction View](images/tn2.png)

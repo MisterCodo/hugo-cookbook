@@ -1,45 +1,29 @@
 ---
-draft: true
 title: "Title for your recipe"
-author: {{ .Site.Params.front.defaultAuthor | default "User" }}
-recipe_image: {{ .Site.Params.front.defaultImage | default "images/defaultImage.png" }} #The image for your recipe
+recipe_image: {{ .Site.Params.front.defaultImage | default "images/defaultImage.png" }}
 image_width: {{ .Site.Params.front.defaultImageWidth | default 512 }}
 image_height: {{ .Site.Params.front.defaultImageHeight | default 512 }}
 date: {{ .Date }}
-tags: ["tag1", "tag2"] #tags for your recipe
-tagline: "A short tagline for your recipe"
+tags: ["tag1", "tag2"]
 servings: 4
-prep_time: 15 #in minutes #can be BLANK
-cook: true # If we are cooking this, leave true, if we are cooling set to false
+prep_time: #in minutes, can be BLANK
+cook: true # If cooking leave true, if cooling set to false
 cook_increment: minutes # set to minutes or hours
-cook_time: 8 #in minutes or hours #can be BLANK
-calories: 300 #in kcal #can be BLANK
-
-# For ingredient subheadings (if you use them), please use the h4 header.  For print view I have those elements targeted
+cook_time: #in minutes or hours, can be BLANK
+calories: #in kcal, can be BLANK
 ---
 
+## Ingrédients
 
-## Ingredients
+- Premier
+- Second [^1]
 
-#### Ingredient Subheading
+## Instructions
 
-- First Ingredient
-- Second Ingredient [^1]
-- Third Ingredient
-- Fourth Ingredient
-- Fifth Ingredient
+1. Première étape
+   1. Première sous étape
+2. Seconde étape
 
+## Notes
 
-## Directions
-
-1. Step One
-   1. Sub Step One
-2. Step Two
-3. Step Three
-4. Step Four
-5. Step Five
-6. Step Six
-
-#### Footnotes
-
-[^1]: Footnote 1
+[^1]: Détails

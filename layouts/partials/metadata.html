@@ -1,7 +1,6 @@
 {{ with .Params.tags }}
-<i class="fas fa-tags"></i>
 {{ range . }}
-{{ $href := print (absURL "tags/") (urlize .) }}
-<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+<i class="fas fa-tags"></i>
+{{ . }}
 {{ end }}
 {{ end }}
