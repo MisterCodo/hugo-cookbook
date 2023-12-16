@@ -28,11 +28,13 @@
             {{ .Params.Cook_time | default "---"}} Minutes
         {{ end }}
     </div>
+    {{ if .Params.Calories }}
     <div class="column" style="padding: 0px;">
         <i class="fas fa-fire"></i>
         <div></div>
         <p class="has-text-weight-bold">Calories</p>
         <div></div>
         {{ .Params.Calories | default "---" }} Kcal
-    </div>     
+    </div>
+    {{ end }}
 </div>
